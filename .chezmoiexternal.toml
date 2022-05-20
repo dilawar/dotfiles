@@ -1,0 +1,10 @@
+[".vim"]
+	type = "git-repo"
+	url = "https://github.com/dilawar/vim"
+	refreshPeriod = "24h"
+
+["Scripts"] 
+	type = "git-repo" 
+	url = "https://github.com/dilawar/Scripts"
+	refreshPeriod = "24h"
+

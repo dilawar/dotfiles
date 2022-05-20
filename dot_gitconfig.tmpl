@@ -1,0 +1,13 @@
+[user]
+    name = {{ .name }}
+    email = {{ .email }}
+    signkey = 97FC9EE02C637EB6
+[merge]
+    tool = vimdiff
+[diff]
+    tool = vimdiff
+[alias]
+    lg1 = log --graph --abbrev-commit --decorate --all
+    lg = !"git lg1"
+[pull]
+    rebase = false
