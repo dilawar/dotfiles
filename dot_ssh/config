@@ -22,6 +22,6 @@ Host zero.subcom
     IdentityFile ~/.ssh/LightsailDefaultKey-ap-southeast-1.pem
 
 Host loc.subcom
-    Hostname 3.110.2.103
+    Hostname 3.110.3.103
     User admin
     IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
