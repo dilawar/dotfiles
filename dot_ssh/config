@@ -25,3 +25,7 @@ Host loc.subcom
     Hostname 3.110.3.103
     User admin
     IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
+
+Host dilawars0.office
+    Hostname 192.168.0.120
+    User dilawars
