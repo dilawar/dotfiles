@@ -8,3 +8,7 @@
 	url = "https://github.com/dilawar/Scripts"
 	refreshPeriod = "24h"
 
+["~/.config/nvim"] 
+	type = "git-repo" 
+	url = "https://github.com/dilawar/nvim"
+	refreshPeriod = "24h"
