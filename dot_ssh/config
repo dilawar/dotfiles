@@ -29,3 +29,7 @@ Host loc.subcom
 Host dilawars0.office
     Hostname 192.168.0.120
     User dilawars
+
+Host geo.subcom
+    Hostname 43.205.33.98
+    User admin
