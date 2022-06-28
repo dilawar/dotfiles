@@ -1,6 +1,12 @@
-Host dilawar.subcom
+Host dilawar.ubuntu.subcom
     Hostname 65.1.118.229
     User dilawar
+
+Host dilawar.subcom
+    Hostname 52.66.150.1
+    User ec2-user
+    IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
+
 
 Host hauhau
     Hostname 65.1.118.229
