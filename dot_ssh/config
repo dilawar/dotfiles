@@ -38,4 +38,5 @@ Host dilawars0.office
 
 Host geo.subcom
     Hostname 43.205.33.98
-    User admin
+    User ec2-user
+    IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
