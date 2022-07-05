@@ -3,9 +3,9 @@ Host dilawar.ubuntu.subcom
     User dilawar
 
 Host dilawar.subcom
-    Hostname 52.66.150.1
-    User ec2-user
-    IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
+    Hostname 54.255.229.173
+    User centos
+    IdentityFile ~/.ssh/LightsailDefaultKey-ap-southeast-1.pem
 
 
 Host hauhau
