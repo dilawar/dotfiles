@@ -1,0 +1,91 @@
+[2022-05-20T17:37:37.774] [INFO] default - n: error: required option '-k, --key <key>' not specified
+    at _exit (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _displayError (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _.missingMandatoryOptionValue (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at C:\snapshot\ZOHOVAULT_CLI\dist\zv.js
+    at Array.forEach (<anonymous>)
+    at _checkForMissingMandatoryOptions (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _parseCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _dispatchSubcommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _parseCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _.parse (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js) {
+  code: 'commander.missingMandatoryOptionValue',
+  exitCode: 1,
+  nestedError: undefined
+}
+[2022-05-20T17:38:38.998] [INFO] default - Configuration file successfully created at C:\Users\DELL\ZohoVaultCLI_1\credentials.json
+[2022-05-20T17:38:52.059] [INFO] default - n: error: missing required argument 'category'
+    at _exit (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _displayError (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _.missingArgument (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at C:\snapshot\ZOHOVAULT_CLI\dist\zv.js
+    at Array.forEach (<anonymous>)
+    at _checkNumberOfArguments (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _processArguments (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _parseCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _dispatchSubcommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _parseCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js) {
+  code: 'commander.missingArgument',
+  exitCode: 1,
+  nestedError: undefined
+}
+[2022-05-20T17:38:55.017] [INFO] default - n: error: unknown command 'ls'
+    at _exit (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _displayError (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _.unknownCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _parseCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _.parse (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at Object.81284 (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at r (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at C:\snapshot\ZOHOVAULT_CLI\dist\zv.js
+    at Object.<anonymous> (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at Module._compile (pkg/prelude/bootstrap.js:1794:22) {
+  code: 'commander.unknownCommand',
+  exitCode: 1,
+  nestedError: undefined
+}
+[2022-05-20T17:38:58.010] [INFO] default - n: (outputHelp)
+    at _exit (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _.help (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _parseCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _.parse (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at Object.81284 (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at r (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at C:\snapshot\ZOHOVAULT_CLI\dist\zv.js
+    at Object.<anonymous> (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at Module._compile (pkg/prelude/bootstrap.js:1794:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10) {
+  code: 'commander.help',
+  exitCode: 1,
+  nestedError: undefined
+}
+[2022-05-20T17:39:04.246] [INFO] default - n: error: required option '-id, --password-id <key>' not specified
+    at _exit (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _displayError (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _.missingMandatoryOptionValue (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at C:\snapshot\ZOHOVAULT_CLI\dist\zv.js
+    at Array.forEach (<anonymous>)
+    at _checkForMissingMandatoryOptions (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _parseCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _dispatchSubcommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _parseCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _.parse (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js) {
+  code: 'commander.missingMandatoryOptionValue',
+  exitCode: 1,
+  nestedError: undefined
+}
+[2022-05-20T17:39:08.532] [INFO] default - n: error: missing required argument 'category'
+    at _exit (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _displayError (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _.missingArgument (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at C:\snapshot\ZOHOVAULT_CLI\dist\zv.js
+    at Array.forEach (<anonymous>)
+    at _checkNumberOfArguments (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _processArguments (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _parseCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _dispatchSubcommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js)
+    at _parseCommand (C:\snapshot\ZOHOVAULT_CLI\dist\zv.js) {
+  code: 'commander.missingArgument',
+  exitCode: 1,
+  nestedError: undefined
+}

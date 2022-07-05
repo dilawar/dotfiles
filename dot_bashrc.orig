@@ -1,0 +1,78 @@
+# Author: Dilawar Singh <dilawar@subcom.tech>
+#
+# IMP: - make sure that this script does not write to stdout, else scp and rsync may
+#   get broken.
+
+SCRIPT_DIR=$HOME/Scripts
+
+if [[ -d $SCRIPT_DIR ]]; then
+    source $SCRIPT_DIR/bashrc &> /dev/null
+fi
+
+# check if we are on msys2 and choco
+CHOCO_BIN_PATH="/c/ProgramData/chocolatey/bin" 
+
+if [[ -d "$CHOCO_BIN_PATH" ]]; then
+    export PATH=$PATH:$CHOCO_BIN_PATH
+fi
+
+# Git related
+export GIT_USER=dilawar
+
+# Prefer .local/bin over anyting else.
+LOCAL_BIN_PATH=$HOME/.local/bin 
+
+if [[ -d $LOCAL_BIN_PATH ]]; then
+    export PATH=$LOCAL_BIN_PATH:$PATH
+fi
+
+# make nvim as default editor
+if command -v nvim &> /dev/null; then
+    alias vim=nvim
+    alias vi=nvim
+    alias vimdiff=nvimdiff
+fi
+
+if ! (ps -p $SSH_AGENT_PID &> /dev/null); then
+	eval $(ssh-agent -s)
+fi
+
+if [[ -f $HOME/.ssh/id_rsa ]]; then
+    ssh-add $HOME/.ssh/id_rsa
+fi
+
+# Export EDITOR
+export EDITOR=vim
+
+# And ofcourse the alias for chezmoi that always use $HOME as --destination.
+# On MSYS2, chezmoi gets terribly confused.
+alias chezmoi="chezmoi -D $HOME"
+
+#
+# msys2 specific sections
+#
+if [[ -v MSYSTEM ]]; then
+    # We are in msys2 environment
+<<<<<<< HEAD
+    CARGO_DIR="$(cygpath $USERPROFILE)/.cargo/bin" 
+    export PATH="$CARGO_DIR:$PATH"
+=======
+    CARGO_DIR="$USERPROFILE/.cargo/bin" 
+    if [[ -d "$CARGO_DIR" ]]; then
+        export PATH="$CARGO_DIR:$PATH"
+    fi 
+    export DISPLAY=:0
+    alias make=remake
+>>>>>>> 583ce565e6535aa4dfc30ce350ce2089880d7106
+fi
+
+## # Windows Python
+PYTHON_HOME="/c/Python310" 
+
+if [[ -f "$PYTHON_HOME/python.exe" ]]; then
+    # FIXME: This python binary doesn't work with msys2. Calling python just freeze the terminal. alias 
+    # python="\$PYTHON_HOME/python.exe"
+    export PATH=$PYTHON_HOME/Scripts:/c/Python310:$PATH 
+fi
+
+
