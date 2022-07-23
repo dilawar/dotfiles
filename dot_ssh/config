@@ -32,7 +32,7 @@ Host loc.subcom
     IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
 
 Host dilawars0.office
-    Hostname 192.168.0.100
+    Hostname 192.168.0.103
     User dilawar
 
 Host geo.subcom
