@@ -38,3 +38,7 @@ Host dilawars0.office
 Host geo.subcom
     Hostname 43.205.33.98
     User admin
+
+Host copr.0.aws
+    Hostname 54.251.87.164
+    IdentityFile ~/.ssh/LightsailDefaultKey-ap-southeast-1.pem
