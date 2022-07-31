@@ -41,4 +41,5 @@ Host geo.subcom
 
 Host copr.0.aws
     Hostname 54.251.87.164
+    User admin
     IdentityFile ~/.ssh/LightsailDefaultKey-ap-southeast-1.pem
