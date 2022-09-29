@@ -37,6 +37,7 @@ Host subcom.link
 
 Host geo.subcom
     Hostname 43.205.33.98
+    IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
     User admin
 
 Host copr.0.aws
