@@ -3,11 +3,6 @@ Host gitlab.subcom.tech
     User dilawar
     IdentityFile ~/.ssh/dilawar
 
-Host hauhau
-    Hostname 65.1.118.229
-    User ubuntu
-    IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
-
 Host gitlab.subcom
     Hostname 54.251.231.79
     User admin
@@ -24,6 +19,7 @@ Host dilawars0.office
 
 Host subcom.link
     Hostname subcom.link
+    Port 4432
     User dilawar
 
 Host geo.subcom
@@ -35,3 +31,8 @@ Host bitia.0.aws
     Hostname 54.251.87.164
     User admin
     IdentityFile ~/.ssh/LightsailDefaultKey-ap-southeast-1.pem
+
+Host web-ops.subcom
+    Hostname 43.205.226.150
+    User admin
+    IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
