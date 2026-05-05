@@ -1,19 +1,69 @@
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
+[tag]
+    sort = version:refname
+[init]
+    defaultBranch = main
 [user]
     name = Dilawar Singh
-    email = dilawar@subcom.tech
-    signkey = 97FC9EE02C637EB6
+    email = dilawar.s.rajput@gmail.com
+[core]
+	pager = delta
+    fsmonitor = true
+    untrackedCache = true
+	autocrlf = input
 [merge]
-    tool = vimdiff
+    tool = nvimdiff
 [diff]
-    tool = vimdiff
+    tool = nvimdiff
 [alias]
     lol = log --all --decorate --oneline --graph
     lg1 = log --graph --abbrev-commit --decorate --all
     lg = !"git lg1"
 [pull]
-    rebase = false
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+    rebase = true
+[push]
+    default = simple
+    autoSetupRemote = true
+    followTags = true
+[fetch]
+    prune = true
+    pruneTags = true
+    all = false
+
+[credential "https://gitlab.dognosis.link"]
+	helper = !/usr/bin/glab auth git-credential
+
+[help]
+    autocorrect = prompt
+[commit]
+    verbose = true
+	gpgsign = true
+[rerere]
+    enabled = true
+    autoupdate = true
+[rebase]
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
+[checkout]
+	defaultRemote = origin
+[grep]
+    lineNumber = true
+[credential "https://gitlab.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/Cellar/glab/1.91.0/bin/glab auth git-credential
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+[mergetool "vimdiff"]
+	layout = MERGED
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential

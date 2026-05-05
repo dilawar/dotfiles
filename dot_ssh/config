@@ -1,38 +1,4 @@
-Host gitlab.subcom.tech
-    Hostname gitlab.subcom.tech
-    User dilawar
-    IdentityFile ~/.ssh/dilawar
-
-Host gitlab.subcom
-    Hostname 54.251.231.79
-    User admin
-    IdentityFile ~/.ssh/LightsailDefaultKey-ap-southeast-1.pem
-
-Host zero.subcom
-    Hostname 54.179.87.54
-    User ec2-user
-    IdentityFile ~/.ssh/LightsailDefaultKey-ap-southeast-1.pem
-
-Host dilawars0.office
-    Hostname 192.168.0.101
-    User dilawar
-
-Host subcom.link
-    Hostname subcom.link
-    Port 4432
-    User dilawar
-
-Host geo.subcom
-    Hostname 43.205.33.98
-    IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
-    User admin
-
-Host bitia.0.aws
-    Hostname 54.251.87.164
-    User admin
-    IdentityFile ~/.ssh/LightsailDefaultKey-ap-southeast-1.pem
-
-Host web-ops.subcom
-    Hostname 43.205.226.150
-    User admin
-    IdentityFile ~/.ssh/LightsailDefaultKey-ap-south-1.pem
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_ed25519
