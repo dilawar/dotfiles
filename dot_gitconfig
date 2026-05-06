@@ -1,5 +1,3 @@
-[column]
-    ui = auto
 [branch]
     sort = -committerdate
 [tag]
@@ -34,13 +32,12 @@
     all = false
 
 [credential "https://gitlab.dognosis.link"]
-	helper = !/usr/bin/glab auth git-credential
+	helper = !glab auth git-credential
 
 [help]
     autocorrect = prompt
 [commit]
     verbose = true
-	gpgsign = true
 [rerere]
     enabled = true
     autoupdate = true
@@ -53,8 +50,7 @@
 [grep]
     lineNumber = true
 [credential "https://gitlab.com"]
-	helper = 
-	helper = !/home/linuxbrew/.linuxbrew/Cellar/glab/1.91.0/bin/glab auth git-credential
+	helper = !glab auth git-credential
 [interactive]
 	diffFilter = delta --color-only
 [delta]
@@ -63,7 +59,7 @@
 	layout = MERGED
 [credential "https://github.com"]
 	helper = 
-	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+	helper = !gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
-	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+	helper = !gh auth git-credential
