@@ -1,3 +1,18 @@
+Host tcin01
+    HostName tcin-mmas-01.office-in.heylxi.com
+    User root
+    IdentityFile ~/.ssh/labs-dev-key.pem
+
+Host tcin02
+    HostName tcin-mmas-02.office-in.heylxi.com
+    User root
+    IdentityFile ~/.ssh/labs-dev-key.pem
+
+Host tcin03
+    HostName tcin-mmas-03.office-in.heylxi.com
+    User root
+    IdentityFile ~/.ssh/labs-dev-key.pem
+
 Host *
     AddKeysToAgent yes
     UseKeychain yes
