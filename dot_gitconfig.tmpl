@@ -6,7 +6,7 @@
     defaultBranch = main
 [user]
     name = Dilawar Singh
-    email = dilawar.s.rajput@gmail.com
+    email = dilawar.s@toyotaconnected.co.in
 [core]
 	pager = delta
     fsmonitor = true
@@ -53,7 +53,7 @@
 [credential "https://gitlab.com"]
 	helper = !glab auth git-credential
 [interactive]
-	diffFilter = delta --color-only
+	diffFilter = delta
 [delta]
 	navigate = true
 [credential "https://github.com"]
@@ -67,3 +67,6 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[merge "npm-translate-lock-merge"]
+	name = Merge driver for the Bazel npm translate lock files
+	driver = true
