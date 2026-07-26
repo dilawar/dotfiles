@@ -1,0 +1,50 @@
+# Author: Dilawar Singh <dilawar@subcom.tech>
+#
+SCRIPT_DIR=$HOME/Scripts
+
+if [[ -d $SCRIPT_DIR ]]; then
+    source $SCRIPT_DIR/bashrc &>/dev/null
+fi
+
+# Prefer .local/bin over anyting else.
+LOCAL_BIN_PATH=$HOME/.local/bin
+
+if [[ -d $LOCAL_BIN_PATH ]]; then
+    export PATH=$LOCAL_BIN_PATH:$PATH
+fi
+
+if ! (ps -p $SSH_AGENT_PID &>/dev/null); then
+    eval $(ssh-agent -s)
+fi
+
+# Export EDITOR
+export EDITOR=vim
+
+# And ofcourse the alias for chezmoi that always use $HOME as --destination.
+# On MSYS2, chezmoi gets terribly confused.
+alias chezmoi="chezmoi -D $HOME"
+
+#
+# msys2 specific sections
+#
+if [[ -v MSYSTEM ]]; then
+    # We are in msys2 environment
+    CARGO_DIR="$(cygpath $USERPROFILE)/.cargo/bin"
+    if [[ -d "$CARGO_DIR" ]]; then
+        export PATH="$CARGO_DIR:$PATH"
+    fi
+    export DISPLAY=localhost:0
+    alias make=remake
+fi
+
+## # Windows Python
+PYTHON_HOME="/c/Python311"
+if [[ -f "$PYTHON_HOME/python.exe" ]]; then
+    # FIXME: This python binary doesn't work with msys2. Calling python just freeze the terminal. alias
+    # python="\$PYTHON_HOME/python.exe"
+    export PATH=$PYTHON_HOME/Scripts:$PYTHON_HOME:$PATH
+fi
+
+export BITIA_PYPI_TOKEN=pypi-AgEIcHlwaS5vcmcCJGRjM2QzYzM1LTYyOWItNDllZS05YzMwLTMyYmNmYTVjZmMzOAACNnsicGVybWlzc2lvbnMiOiB7InByb2plY3RzIjogWyJiaXRpYSJdfSwgInZlcnNpb24iOiAxfQACOXsicHJvamVjdF9pZHMiOiBbImM2YThlMzJmLWZhYjUtNGE5Ni04YTkzLWU4ODU3YjllZjU4MiJdfQAABiCQizLv_KJ0JDjtkBeq_KWP7SnfWRnnO-ZNDPGCILBGaw
+# export CARGO_TARGET_DIR="$HOME/.cache/cargobuild"
+# mkdir -p "${CARGO_TARGET_DIR}"
