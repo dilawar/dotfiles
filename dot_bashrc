@@ -44,7 +44,3 @@ if [[ -f "$PYTHON_HOME/python.exe" ]]; then
     # python="\$PYTHON_HOME/python.exe"
     export PATH=$PYTHON_HOME/Scripts:$PYTHON_HOME:$PATH
 fi
-
-export BITIA_PYPI_TOKEN=pypi-AgEIcHlwaS5vcmcCJGRjM2QzYzM1LTYyOWItNDllZS05YzMwLTMyYmNmYTVjZmMzOAACNnsicGVybWlzc2lvbnMiOiB7InByb2plY3RzIjogWyJiaXRpYSJdfSwgInZlcnNpb24iOiAxfQACOXsicHJvamVjdF9pZHMiOiBbImM2YThlMzJmLWZhYjUtNGE5Ni04YTkzLWU4ODU3YjllZjU4MiJdfQAABiCQizLv_KJ0JDjtkBeq_KWP7SnfWRnnO-ZNDPGCILBGaw
-# export CARGO_TARGET_DIR="$HOME/.cache/cargobuild"
-# mkdir -p "${CARGO_TARGET_DIR}"
