@@ -10,6 +10,7 @@ set -Ux EDITOR nvim
 
 fish_add_path -g ~/.local/bin
 fish_add_path -g ~/.cargo/bin
+fish_add_path -g ~/Scripts/
 
 # 
 # This takes a long time to load, so I have it in a separate file that I can source when needed
