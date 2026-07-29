@@ -6,7 +6,7 @@
     defaultBranch = main
 [user]
     name = Dilawar Singh
-    email = {{ .email | quote }}
+    email = "dilawar.s@toyotaconnected.co.in"
 [core]
 	pager = delta
     fsmonitor = true
@@ -20,6 +20,7 @@
     lol = log --all --decorate --oneline --graph
     lg1 = log --graph --abbrev-commit --decorate --all
     lg = !"git lg1"
+	tree = log --graph --oneline --decorate --all
 [pull]
     rebase = true
 [push]
