@@ -16,7 +16,7 @@ fish_ssh_agent
 
 {{- if eq .chezmoi.os "linux" }}
 
-if test -z (pgrep ssh-agent)
+if not pgrep -f "ssh-agent" >/dev/null
   eval (ssh-agent -c)
   set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
   set -Ux SSH_AGENT_PID $SSH_AGENT_PID
