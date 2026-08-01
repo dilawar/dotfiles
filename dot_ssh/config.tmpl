@@ -31,5 +31,12 @@ Host !tcin-github *
     IdentityFile ~/.ssh/id_ed25519
 
 {{- else }}
+
 AddKeysToAgent yes
+
+Host signoz.dog
+    Hostname signoz.dognosis.link
+    User debian
+    IdentityFile ~/.ssh/dognosis-ap-south-1.pem
+
 {{- end }}
