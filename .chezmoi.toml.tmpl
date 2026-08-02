@@ -1,9 +1,8 @@
-{{- $email := promptStringOnce . "email" "Email address" -}}
 encryption = "gpg"
 [gpg]
     recipient = "dilawar.s.rajput@gmail.com"
 [data]
-    email = {{ email | quote }}
+    email = "dilawar.s.rajput@gmail.com"
 [git]
     autoCommit = true
     autoPush = true
