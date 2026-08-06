@@ -1,5 +1,3 @@
-{{- if eq .chezmoi.os "macos" }}
-
 Include /Users/dilawar.s/Work/TCIN/p21-embedded/bin/p21_ssh_config
 Include /Users/dilawar.s/.colima/ssh_config
 
@@ -29,7 +27,7 @@ Host tcin-github
 Host !tcin-github *
     AddKeysToAgent yes
     IdentityFile ~/.ssh/id_ed25519
-{{- else }}
+
 AddKeysToAgent yes
 
 Host signoz.dog
@@ -41,5 +39,3 @@ Host dilawar-in
     Hostname 137.74.42.34
     User debian
     IdentityFile ~/.ssh/id_rsa.pub
-
-{{- end }}
