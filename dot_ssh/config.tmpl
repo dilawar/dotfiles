@@ -3,31 +3,6 @@ Include /Users/dilawar.s/.colima/ssh_config
 
 Include /Users/dilawar.s/Work/TCIN/p21-embedded/bin/p21_ssh_config
 
-Host tcin01
-    HostName tcin-mmas-01.office-in.heylxi.com
-    User root
-    IdentityFile ~/.ssh/labs-dev-key.pem
-
-Host tcin02
-    HostName tcin-mmas-02.office-in.heylxi.com
-    User root
-    IdentityFile ~/.ssh/labs-dev-key.pem
-
-Host tcin03
-    HostName tcin-mmas-03.office-in.heylxi.com
-    User root
-    IdentityFile ~/.ssh/labs-dev-key.pem
-
-Host tcin-github
-    HostName github.com
-    User dilawar_s-tcindia
-    UseKeychain yes
-    IdentityFile ~/.ssh/dilawar_s_tcin 
-
-Host !tcin-github *
-    AddKeysToAgent yes
-    IdentityFile ~/.ssh/id_ed25519
-
 AddKeysToAgent yes
 
 Host signoz.dog
