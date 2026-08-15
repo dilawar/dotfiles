@@ -21,6 +21,16 @@ if not pgrep -f ssh-agent >/dev/null
     set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
 end
 
-{ { if eq .chezmoi.os darwin } { { else if eq .chezmoi.os linux } { { else } { { end } source ~/.config/fish/.env.personal
+{{ if eq .chezmoi.os "darwin" }}
+
+{{ else if eq .chezmoi.os "linux" }}
+
+set -Ux PERL5LIB /usr/lib/obs-build
+
+{{ else }}
+
+{{ end }}
+
+source ~/.config/fish/.env.personal
 
 starship completions fish | source
