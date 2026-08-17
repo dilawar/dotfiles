@@ -13,7 +13,7 @@ config.initial_rows = 50
 config.font = wezterm.font("Fantasque Sans Mono")
 
 -- or, changing the font size and color scheme.
-config.font_size = 10
+config.font_size = 12
 config.color_scheme = "Gruvbox Light"
 
 -- Finally, return the configuration to wezterm:
