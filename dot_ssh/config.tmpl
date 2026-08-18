@@ -5,6 +5,26 @@ Include /Users/dilawar.s/Work/TCIN/p21-embedded/bin/p21_ssh_config
 
 AddKeysToAgent yes
 
+Host tcin01
+  Hostname tcin-mmas-02.office-in.heylxi.com
+  User root 
+  IdentityFile ~/.ssh/labs-dev-key.pem
+
+Host tcin02
+  Hostname tcin-mmas-02.office-in.heylxi.com
+  User root 
+  IdentityFile ~/.ssh/labs-dev-key.pem
+
+Host tcin03
+  Hostname tcin-mmas-03.office-in.heylxi.com
+  User root 
+  IdentityFile ~/.ssh/labs-dev-key.pem
+
+Host tcin04
+  Hostname tcin-mmas-04.office-in.heylxi.com
+  User root 
+  IdentityFile ~/.ssh/labs-dev-key.pem
+
 Host signoz.dog
     Hostname signoz.dognosis.link
     User debian
