@@ -20,25 +20,25 @@
     lol = log --all --decorate --oneline --graph
     lg1 = log --graph --abbrev-commit --decorate --all
     lg = !"git lg1"
-	tree = log --graph --oneline --decorate --all
-	append = town append
-	compress = town compress
-	continue = town continue
-	contribute = town contribute
-	delete = town delete
-	diff-parent = town diff-parent
-	down = town down
-	hack = town hack
-	observe = town observe
-	park = town park
-	prepend = town prepend
-	propose = town propose
-	rename = town rename
-	repo = town repo
-	set-parent = town set-parent
-	ship = town ship
-	sync = town sync
-	up = town up
+    tree = log --graph --oneline --decorate --all
+    append = town append
+    compress = town compress
+    continue = town continue
+    contribute = town contribute
+    delete = town delete
+    diff-parent = town diff-parent
+    down = town down
+    hack = town hack
+    observe = town observe
+    park = town park
+    prepend = town prepend
+    propose = town propose
+    rename = town rename
+    repo = town repo
+    set-parent = town set-parent
+    ship = town ship
+    sync = town sync
+    up = town up
 [pull]
     rebase = true
 [push]
@@ -71,8 +71,6 @@
     lineNumber = true
 [credential "https://gitlab.com"]
 	helper = !glab auth git-credential
-[interactive]
-	diffFilter = delta
 [delta]
 	navigate = true
 [credential "https://github.com"]
@@ -89,3 +87,5 @@
 [merge "npm-translate-lock-merge"]
 	name = Merge driver for the Bazel npm translate lock files
 	driver = true
+[mergetool]
+	keepBackup = false
