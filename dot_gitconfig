@@ -15,7 +15,8 @@
 [merge]
     tool = nvimdiff
 [diff]
-    tool = nvimdiff
+  tool = nvimdiff
+  external = difft
 [alias]
     lol = log --all --decorate --oneline --graph
     lg1 = log --graph --abbrev-commit --decorate --all
