@@ -16,7 +16,7 @@ fish_add_path -g /opt/fil/bin
 # ssh agent
 fish_ssh_agent
 
-
+# os specific settings
 {{- if eq .chezmoi.os "darwin" -}}
 fish_add_path -g /opt/homebrew/bin
 {{- else if eq .chezmoi.os "linux" -}}
