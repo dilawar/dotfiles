@@ -22,13 +22,13 @@ if not pgrep -f ssh-agent >/dev/null
     set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
 end
 
-{{ if eq .chezmoi.os darwin }}
+{{- if eq .chezmoi.os "darwin" -}}
    fish_add_path -g /opt/homebrew/bin
-{{ else if eq .chezmoi.os linux }}
+{{- else if eq .chezmoi.os "linux" -}}
   set -Ux PERL5LIB /usr/lib/obs-build
-{{ else }} 
- # nothing here
-{{ end }} 
+{{- else -}}
+  # nothing here
+{{- end -}}
 
 
 source ~/.config/fish/.env.personal
