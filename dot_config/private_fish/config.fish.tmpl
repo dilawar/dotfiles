@@ -13,7 +13,9 @@ fish_add_path -g ~/.cargo/bin
 fish_add_path -g ~/Scripts/
 fish_add_path -g /opt/fil/bin
 
+# ssh agent
 fish_ssh_agent
+
 
 {{- if eq .chezmoi.os "darwin" -}}
 fish_add_path -g /opt/homebrew/bin
@@ -23,6 +25,9 @@ set -Ux PERL5LIB /usr/lib/obs-build
 # nothing here
 {{- end -}}
 
+
+# source personal file
 source ~/.config/fish/.env.personal
 
+# starship
 starship completions fish | source
