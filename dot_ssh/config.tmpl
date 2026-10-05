@@ -14,3 +14,13 @@ Host dilawar-in
     Hostname 137.74.42.34
     User debian
     IdentityFile ~/.ssh/id_rsa.pub
+
+Host me.github.com
+  Hostname github.com 
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_ed25519
+
+Host progress.github.com
+  Hostname github.com 
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/progress
