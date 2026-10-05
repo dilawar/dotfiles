@@ -8,7 +8,6 @@ alias vim="nvim"
 alias v="nvim"
 set -Ux EDITOR nvim
 
-fish_add_path -g /opt/homebrew/bin
 fish_add_path -g ~/.local/bin
 fish_add_path -g ~/.cargo/bin
 fish_add_path -g ~/Scripts/
@@ -23,8 +22,15 @@ if not pgrep -f ssh-agent >/dev/null
     set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
 end
 
-{ { if eq .chezmoi.os darwin } { { else if eq .chezmoi.os linux } set -Ux PERL5LIB /usr/lib/obs-build
+{{ if eq .chezmoi.os darwin }}
+   fish_add_path -g /opt/homebrew/bin
+{{ else if eq .chezmoi.os linux }}
+  set -Ux PERL5LIB /usr/lib/obs-build
+{{ else }} 
+ # nothing here
+{{ end }} 
 
-{ { else } { { end } source ~/.config/fish/.env.personal
+
+source ~/.config/fish/.env.personal
 
 starship completions fish | source
