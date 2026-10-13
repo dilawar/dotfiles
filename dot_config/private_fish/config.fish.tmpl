@@ -8,7 +8,6 @@ alias vim="nvim"
 alias v="nvim"
 set -Ux EDITOR nvim
 
-fish_add_path -g ~/.local/bin
 fish_add_path -g ~/.cargo/bin
 fish_add_path -g ~/Scripts/
 
@@ -31,5 +30,4 @@ source ~/.config/fish/env.progress
 # source personal file
 source ~/.config/fish/.env.personal
 
-# starship
-starship completions fish | source
+fish_add_path -g ~/.local/bin
