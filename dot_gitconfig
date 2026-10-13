@@ -6,16 +6,14 @@
     defaultBranch = main
 [user]
     name = Dilawar Singh
-    email = "dilawar.s@toyotaconnected.co.in"
+    email = "Dilawar.Singh@progress.com"
 [core]
-	pager = delta
-    fsmonitor = true
-    untrackedCache = true
-	autocrlf = input
+  fsmonitor = true
+  untrackedCache = true
 [merge]
-    tool = nvimdiff
+   tool = nvimdiff
 [diff]
-  tool = nvimdiff
+   tool = nvimdiff
 [alias]
     lol = log --all --decorate --oneline --graph
     lg1 = log --graph --abbrev-commit --decorate --all
