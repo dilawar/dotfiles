@@ -69,3 +69,5 @@
 	driver = true
 [mergetool]
 	keepBackup = false
+[format]
+	signoff = true
