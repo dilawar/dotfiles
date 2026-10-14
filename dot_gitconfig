@@ -19,6 +19,7 @@
     lg1 = log --graph --abbrev-commit --decorate --all
     lg = !"git lg1"
     tree = log --graph --oneline --decorate --all
+    commit = commit -s
 [pull]
     rebase = true
 [push]
