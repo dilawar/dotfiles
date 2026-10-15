@@ -37,11 +37,11 @@
 [help]
     autocorrect = prompt
 [commit]
-    verbose = true
-	  gpgsign = false
+   verbose = true
+	 gpgsign = false
 [rerere]
 	enabled = true
-    autoupdate = true
+  autoupdate = true
 [rebase]
     autoSquash = true
     autoStash = true
@@ -72,3 +72,8 @@
 	keepBackup = false
 [format]
 	signoff = true
+[git-town]
+	sync-feature-strategy = rebase
+  sync-perennial-strategy = rebase
+  sync-prototype-strategy = rebase
+  sync-autosync = false
