@@ -38,7 +38,6 @@
     autocorrect = prompt
 [commit]
    verbose = true
-	 gpgsign = false
 [rerere]
 	enabled = true
   autoupdate = true
@@ -77,3 +76,9 @@
   sync-perennial-strategy = rebase
   sync-prototype-strategy = rebase
   sync-autosync = false
+  sync-autopush = false
+  forge-type = github
+# [gpg]
+# 	format = x509
+# [gpg "x509"]
+# 	program = gitsign
