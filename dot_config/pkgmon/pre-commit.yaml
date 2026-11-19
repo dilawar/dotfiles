@@ -1,0 +1,40 @@
+minimum_pre_commit_version: "3.2.0"
+
+repos:
+  - repo: local
+    hooks:
+      - id: cargo-fmt
+        name: cargo fmt
+        entry: cargo +nightly fmt --all -- --check
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]
+      - id: cargo-clippy
+        name: cargo clippy
+        entry: cargo clippy --workspace --all-targets --all-features -- -D warnings
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]
+      - id: cargo-machete
+        name: cargo machete (warn on unused dependencies)
+        entry: cargo machete
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]
+      - id: cargo-test
+        name: cargo test
+        entry: cargo test --workspace --all-features
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]
+      - id: cargo-build
+        name: cargo build
+        entry: cargo build --workspace --all-targets --all-features
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]
