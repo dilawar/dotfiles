@@ -14,20 +14,12 @@ fish_add_path -g ~/Scripts/
 # ssh agent
 fish_ssh_agent
 
-# os specific settings
-{{- if eq .chezmoi.os "darwin" -}}
-fish_add_path -g /opt/homebrew/bin
-{{- else if eq .chezmoi.os "linux" -}}
-set -Ux PERL5LIB /usr/lib/obs-build
-fish_add_path -g /opt/fil/bin
-{{- else -}}
-# nothing here
-{{- end -}}
-
-# progress env
+# os specific settingsfish_add_path -g /opt/homebrew/bin# progress env
 source ~/.config/fish/env.progress
 
 # source personal file
 source ~/.config/fish/.env.personal
 
 fish_add_path -g ~/.local/bin
+
+starship init fish | source
